@@ -164,8 +164,8 @@
 		\end{tikzpicture}
 	}
 }
-\newcommand\projects[1]{ 
-	\renewcommand{\projects}{
+\newcommand\education[1]{ 
+	\renewcommand{\education}{
 		{#1}
 	}
 }
@@ -196,7 +196,7 @@
 
     %------------------------------------------------
     
-    \vspace{4mm}
+    \vspace{3mm}
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
@@ -207,7 +207,7 @@
               $} 
             & \cvnumberphone\\}
             
-      \ifthenelse{\equal{\cvsite}{}}{}{
+      \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
               \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
@@ -240,8 +240,8 @@
     \end{tabular}
 
     %------------------------------------------------
-    \vspace{4mm}
-    \profilesection{Skills}{4cm}
+    \vspace{3mm}
+    \profilesection{Technical Skills}{1.2cm}
     
     {\large \textbf{Overview}}
 
@@ -255,10 +255,10 @@
 
 		 \programming
          
-        \vspace{4mm}
-        \profilesection{Projects}{3cm} 
+        \vspace{3mm}
+        \profilesection{Education}{3cm} 
         
-        \projects
+        \education
       
   \end{textblock}
 }
@@ -286,7 +286,7 @@
 		\LARGE\headingfont\color{headercolor}%
 		\@sectioncolor #1%
 	}
-  \par\vspace{\parskip}
+  \par\vspace{1mm}
 }
 
 \renewcommand{\subsection}[1]{

@@ -19,30 +19,32 @@
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
 
 % Command for printing skill overview bubbles
-\newcommand\skills{ 
-~
-	\smartdiagram[bubble diagram]{
-        \textbf{Data}\\\textbf{Engineering},
-        \textbf{Full Stack}\\\textbf{Dev},
-        \textbf{~~~~~~~~OOP~~~~~~~~~},
-        \textbf{~~~~~~Machine~~~~~~}\\\textbf{~~Learning~~},
-        \textbf{~~~~~DevOps~~~~~}
-    }
-}
+\newcommand\skills{
+   	\smartdiagram[bubble diagram]{
+		\textbf{Data}\\\textbf{Science},
+		\textbf{Visualisation},
+		\textbf{Data}\\\textbf{Modelling},
+		\textbf{Machine}\\\textbf{Learning},
+		\textbf{Test}\\\textbf{~~Automation~~},
+		\textbf{Statistical}\\\textbf{Analysis}
+		}
+	}
 
 % Programming skill bars
-\programming{{C $\textbullet$ C++  $\textbullet$ R / 3}, {JavaScript $\textbullet$ SQL $\textbullet$ \large \LaTeX / 3.5}, {Scala $\textbullet$ Java $\textbullet$ Python / 5}}
+\Languages{{JavaScript  / 2.0}, {SQL $\textbullet$ \large \LaTeX / 3.5}, {HTML5 $\textbullet$ Python / 4}}
 
 % Projects text
-\education{
-\textbf{MSc., Computer Science} (GPA: 3.7) \\
-Specialization: Data Mining \\
-University of Guelph \\
-2015 - 2017 | Guelph, Canada
+% \hangindent=1.5cm
+\Tech{
+\textbf{Python} - Scikit-learn $\textbullet$ NumPy $\textbullet$ Scrapy $\textbullet$  Pandas $\textbullet$ Gensim $\textbullet$ Flask $\textbullet$ Dash $\textbullet$ Beautiful Soup
 
-\textbf{BEng., Computer Engineering} (GPA: 4.0) \\
-University of Pune \\
-2009 - 2013 | Pune, India
+\\\textbf{JavaScript} - React $\textbullet$ TypeScript 
+
+\\\textbf{Database} - MongoDB $\textbullet$ Relational DB
+
+\\\textbf{General} - Virtual Environments \hangindent=1.4cm $\textbullet$ Docker $\textbullet$ HTML $\textbullet$ LaTeX $\textbullet$ CSS $\textbullet$ AGILE $\textbullet$ Scrum $\textbullet$ Git
+
+\\\textbf{Statistics} - LSI $\textbullet$ LDA $\textbullet$ kNN $\textbullet$ LOGIT \hangindent=1.4cm $\textbullet$ MLE $\textbullet$ AR $\textbullet$ MA $\textbullet$ ARIMA
 }
 
 %----------------------------------------------------------------------------------------
@@ -50,15 +52,15 @@ University of Pune \\
 %----------------------------------------------------------------------------------------
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\cvname{HARSH GADGIL} % Your name
-\cvjobtitle{ Data Engineer } % Job
+\cvname{Rowan \\McDonald} % Your name
+\cvjobtitle{ Junior Data Scientist} % Job
 % title/career
 
-\cvlinkedin{/in/hsgadgil}
-\cvgithub{opensorceror}
-\cvnumberphone{(647) 221 7999} % Phone number
-\cvsite{hgadgil.com} % Personal website
-\cvmail{harsh.gadgil@gmail.com} % Email address
+\cvlinkedin{/in/rowanmcd}
+
+\cvnumberphone{(+44) 07771550241} % Phone number
+
+\cvmail{rowanrmcd@gmail.com} % Email address
 
 %----------------------------------------------------------------------------------------
 
@@ -67,95 +69,97 @@ University of Pune \\
 \makeprofile % Print the sidebar
 
 %----------------------------------------------------------------------------------------
+% Summary
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+
+{\begin{description}
+		\item{An energetic individual interested in analysing data to bring clarity on otherwise murky problems. With a strong statistical background in economics from academia and drive to learn.} 
+\end{description}}
+
+\vspace{8mm}
+
+
+%----------------------------------------------------------------------------------------
 %	 EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{April 2017 -}
-		{Present}
-        {Machine Learning Engineer}
-        {\href{http://www.bell.ca/}{Bell}}
-        {}
-        {\begin{itemize}
-        \item Focused on developing machine learning models, production deployment,  unit testing, scaling and performance tuning
-        \item Projects: SMS spam detection, Robocall detection 
-        
-        Tools: Kafka, Flume, Spark, Hive, Solr, Jupyter Lab, Kubernetes, Docker
-        
-        Awards: Merit Gold (2x), Merit Platinum
-        \item Presented several talks on Machine Learning and Big Data at university hackathons and Bell internal conferences
-        \item Conducted interviews for junior, and senior, data engineering roles
-        \end{itemize}}
-        \\
 	\twentyitem
-    	{Sep 2015 -}
-		{May 2016}
-        {Co-founder \& Full Stack Developer}
-        {\href{http://www.localxchange.ca/}{LocalXChange Inc.}}
-        {}
-        {
-        {\begin{itemize}
-        \item In a team of 2, raised \$8,000 in funding from The Hub incubator at the University of Guelph, to develop a hyperlocal content platform, aimed at delivering local news and events to local users in realtime
-        \item In a team of 3, built hybrid mobile \& web apps with Ionic, Angular.js and MongoDB, surpassing 1,000 users within a month since launch
-        \item Met with the Mayor of Guelph and University of Guelph officials to discuss how the app can help boost Guelph Tourism 
-    \end{itemize}}
-        }
-    \\   
-    \twentyitem
-   		{Sep 2015 -}
-		{Dec 2016}
-        {Graduate Teaching Assistant}
-        {\href{http://www.uoguelph.ca}{University of Guelph}}
-        {}
-        {
-        {\begin{itemize}
-        \item TA for CIS*2430 (OOP), CIS*4150 (Software Reliability \& Testing) and CIS*3530 (Database Systems \& Concepts) courses
-        \item Delivered several lectures for CIS*3530 when professor was away at a conference
-    \end{itemize}}
-        }
-     \\
-     \twentyitem
-   		{Dec 2013 -}
-		{Apr 2015}
-        {Test Automation Engineer}
-        {\href{http://www.synechron.com/}{Synechron}}
-        {}
-        {
-        \begin{itemize}
-        \item Primarily developed test automation libraries using Java and C\#, scripts and CI / CD pipelines
-        \item Lead development of a Keyword Driven \& Behavior Driven test framework for \href{https://www.microsoft.com/en-ca/dynamics/crm.aspx}{Microsoft Dynamics CRM}. Earned monetary award \& client appreciation.
-        \item Demonstrated that rewriting an in-house test framework for \href{https://www.microsoft.com/en-ca/dynamics/erp-ax-overview.aspx}{Microsoft Dynamics AX}, using an open source library (White) instead of a proprietary one (Coded UI), would help the team save \$4K annually by downgrading Microsoft Visual Studio
-    \end{itemize}
-    	}
-        
+	{Mar 2018 -}
+	{Present}
+	{Junior Data Scientist}
+	{\href{https://acrotrend.com/}{Acrotrend}}
+	{}
+	{\begin{itemize}
+			\item Currently involved in building, optimizing and researching natural language processing models in Python for customer insights and analytics.
+			\item Assisted in developing a pilot app that utilised results from semantic analysis models built within Acrotrend. in a team of 4
+			\item Designed and implemented a ordinal model evaluation procedure for semantic analysis 
+			\item Led User Acceptance Testing on developed products and ran walk-throughs for colleagues on new software
+			\item Contributed to the in-house wiki to, assisting in the knowledge sharing 
+	\end{itemize}}
+	\\
+	\twentyitem
+	{Sep 2017 -}
+	{Mar 2018}
+	{Research Assistant}
+	{\href{http://www.swansea.ac.uk/}{Swansea University, UK}}
+	{}
+	{
+		{\begin{itemize}
+				\item In a team of 2, raised \$8,000 in funding from The Hub incubator at the University of Guelph, to develop a prototype hyperlocal content platform, aimed at delivering local news and events from community organizations to local users in realtime (i.e., hyperlocal)
+				\item In a team of 3, built hybrid mobile \& web apps with Ionic, Angular.js and MongoDB, surpassing 1,000 users within a month since launch
+				\item Met with city officials, including the Mayor of Guelph, and university officials to discuss marketing \& business strategies for the platform
+				\item \textbf{Tools}: R, Python, scikit-learn, BeautifulSoup, pandas, matplotlib \vspace{2mm} 
+		\end{itemize}}
+	}
+
+	
+	
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
-%	 RESEARCH
+%	 EDUCATION
 %----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+		\twentyitem
+    	{2014 - 2017}
+        {}
+        {BSc Economics \& Finance \textnormal{(First Class Honours)}}
+        {\href{http://www.swansea.ac.uk/}{Swansea University, UK}} 	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}	
+        {}
+        {	
+       	{\begin{itemize}
+        			\item Performed highly in all Econometric modules, producing forecasts and regressions using Holt-Winters, Time Series Decomposition, LOGIT, and ARIMA methodologies.
+        			\item Acted for the School of Management as the College Representative, making me responsible for representing the views of more than 2,000 students
+        			\item \textbf{Tools}: Stata, Eviews, Excel \vspace{2mm}
+       	  \end{itemize}}
+        }
+    
+\end{twenty}
+
 \section{Research}
 \begin{twenty}
 	\twentyitem
-    	{2015 - 2017}
-		{}
-        {MSc. Candidate, Graduate Research Assistant}
-        {\href{http://www.uoguelph.ca/}{University of Guelph}}
-        {}
-        {
-       	\textbf{Thesis}: Data Integration from Multiple Historical Sources to Study Canadian Casualties of WWI
+    	{Sep 2017 -}
+    	{Mar 2018}
+    	{Area: \textnormal{\href{http://www.swansea.ac.uk/staff/som/academic-staff/r.chowdhury/}{Dr Chowdhurys'} work on {\href{http://www.emeraldinsight.com/doi/abs/10.1108/JERER-02-2014-0014}{Regional House Price cycles in the UK}}}}
+    	{}
         {\begin{itemize}
-        \item Proposed a stepwise deterministic method to integrate datasets without labeled data. The method performs comparably with a method that incorporates a Support Vector Machine
-        \item Prepared a longitudinal dataset to enable comprehensive analyses about WWI Canadian society and military, seeding further research
-        \item \textbf{Tools}: R, Python, scikit-learn, pandas \vspace{2mm}
+        		\item Conducted analysis on historical time series house pricing data to define detailed, regional level house price cycles, which was the first paper of its kind at the time.
+        		\item Collected, cleaned and transformed data, due to the historical data being fragmented across multiple external sources.
+        		\item \textbf{Tools}: SQL, Stata, RATs, Excel 
+        		\vspace{2mm}
 		\end{itemize}}
-        }
+	
+		%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
-\section{Publications}
-L. Antonie, H. Gadgil, G. Grewal, and K. Inwood, “Historical Data Integration - A Study of WWI Canadian Soldiers,” in 2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW), pp. 186-193, IEEE, 2016. \vspace{2mm}
 
 \end{document} 

@@ -152,10 +152,10 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\programming[1]{ 
-	\renewcommand{\programming}{
+\newcommand\Languages[1]{
+	\renewcommand{\Languages}{
 		\begin{tikzpicture}
-        	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+        	\node [above right] at (0, 4) {$Beginner \: \arrow{2.5} \: Advanced$};
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
@@ -164,8 +164,8 @@
 		\end{tikzpicture}
 	}
 }
-\newcommand\education[1]{ 
-	\renewcommand{\education}{
+\newcommand\Tech[1]{
+	\renewcommand{\Tech}{
 		{#1}
 	}
 }
@@ -184,82 +184,73 @@
   \begin{textblock}{6}(0.5, 0.2)
 
     %------------------------------------------------
-    
+
         \vspace{4mm}
     {\Huge\color{pblue}\cvname}
-    
+
     \vspace{2mm}
 
     %------------------------------------------------
-    
+
     {\Large\color{black!80}\cvjobtitle}
 
     %------------------------------------------------
-    
-    \vspace{3mm}
+
+    \vspace{6mm}
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
       		{$
               \begin{array}{l}
-              \hspace{4mm} \Huge \textnormal{\faMobile} 
+              \hspace{4mm} \Huge \textnormal{\faMobile}
               \end{array}
-              $} 
+              $}
             & \cvnumberphone\\}
-            
-      \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
-              \end{array}
-              $} 
-            & \href{http://\cvsite}{\cvsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
               \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
               \end{array}
-              $} 
+              $}
             & \href{mailto:\cvmail}{\cvmail} \\}
-      
-       \ifthenelse{\equal{\cvlinkedin}{}}{}{
+
+      \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
               \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
               \end{array}
               $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
-            }  
-        \ifthenelse{\equal{\cvgithub}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\faGithub}
-              \end{array}
-              $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
-            }   
-            
+            }
     \end{tabular}
+    \vspace{2mm}
 
     %------------------------------------------------
-    \vspace{3mm}
-    \profilesection{Technical Skills}{1.2cm}
-    
+
+    \profilesection{Skills}{4cm}
+
     {\large \textbf{Overview}}
 
 	\skills
-        
-        %------------------------------------------------
-        
-        \vspace{3mm}
-       
-	 {\large \textbf{Programming}} 
 
-		 \programming
-         
-        \vspace{3mm}
-        \profilesection{Education}{3cm} 
-        
-        \education
-      
+    %------------------------------------------------
+
+
+    \vspace{4mm}
+    \profilesection{Languages}{2.4cm}
+
+    \Languages
+
+
+    %------------------------------------------------
+
+        \vspace{4mm}
+        \profilesection{Tech}{4.3cm}
+
+        \Tech
+
+
+
+
   \end{textblock}
 }
 
@@ -286,7 +277,7 @@
 		\LARGE\headingfont\color{headercolor}%
 		\@sectioncolor #1%
 	}
-  \par\vspace{1mm}
+  \par\vspace{\parskip}
 }
 
 \renewcommand{\subsection}[1]{
@@ -313,7 +304,7 @@
 
 % \newcommand{\twentyitem}[5]{%
 % 	#1&\parbox[t]{0.83\textwidth}{%
-% 		\textbf{#2}% 
+% 		\textbf{#2}%
 % 		\hfill%
 % 		{\footnotesize#3}\\%
 %         \ifblank{#4}{}{#4 \\}
@@ -323,7 +314,7 @@
 
 \newcommand{\twentyitem}[6]{%
 	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#3}% 
+		\textbf{#3}%
 		\hfill%
 		{\footnotesize#4}%
         }\\%
@@ -368,7 +359,7 @@
     %  specifies the minimum size of the bubbles
     bubble node size = 0.5cm,
     % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
+    distance center/other bubbles = 0.5cm,
     % sets the distance from the text to the border of the bubble center node
     distance text center bubble = 0.5cm,
     % set center bubble color
@@ -380,4 +371,3 @@
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
-
